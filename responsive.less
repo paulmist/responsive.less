@@ -1,0 +1,9 @@
+/*
+Responsive Less
+*/
+
+.flex(@target: 100px, @context:100px){
+	@w: (@target/@context)*100;
+	@ww: ~`@{w}.toFixed(2) + "%"`;
+	width: @ww;
+}

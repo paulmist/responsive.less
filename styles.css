@@ -1,0 +1,11 @@
+/*
+Responsive Less
+*/
+h1 {
+  border: 1px solid red;
+  color: red;
+}
+#box {
+  width: 1.04%;
+  background: #ccc;
+}
