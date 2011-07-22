@@ -1,20 +1,53 @@
 @import 'responsive.less';
 
-h1{
-	border: 1px solid red;
-	color: red;
+/*
+EXAMPLE USAGE
+-------------
+
+--- .width() ---
+
+Convert px based width to %
+where 480px is our desired element width
+and 960px is the context in which it
+sits, or it parent's width -
+
+#div{
+	.width(960, 480);	
 }
 
-#wrapper{
-	width: 80%;
-	margin: 0 auto;
-	background: #ddd;
+--- .padding() ---
+
+Convert px based padding to %
+where 10px (the usual 'top right bottom left' order applies)
+is our desired element's padding
+and 480px is the element width
+
+#div{
+	.padding(480, 10, 10, 10, 10);	
 }
 
-#box{
-	.width(400, 960);
-	.padding(400, 20, 4, 4,4);
-	.margin(960, 10, 96, 10, 10);
-	background: #ccc;
-	border: 1px solid red;
+Individual properties are also available e.g.
+
+#div{
+	.padding-left(480, 10);
 }
+
+--- .margin() ---
+
+Convert px based margin to %
+where 10px (the usual 'top right bottom left' order applies)
+is our desired element's margin
+and 480px is the context in which it
+sits, or it parent's width -
+
+#div{
+	.margin(480, 10, 10, 10, 10);	
+}
+
+Individual properties are also available e.g.
+
+#div{
+	.margin-left(480, 10);
+}
+
+*/
