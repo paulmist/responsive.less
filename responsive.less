@@ -2,8 +2,24 @@
 Responsive Less
 */
 
-.flex(@target: 100px, @context:100px){
-	@w: (@target/@context)*100;
-	@ww: ~`@{w}.toFixed(2) + "%"`;
-	width: @ww;
+.width(@target: 100px, @context:100px){
+	@percent: (@target/@context)*100;
+	@percent-fixed: ~`@{percent}.toFixed(2) + "%"`;
+	width: @percent-fixed;
+}
+
+.padding(@context, @top: 0, @right: 0, @bottom: 0, @left: 0){
+	@top-percent: (@top/@context)*100;
+	@right-percent: (@right/@context)*100;
+	@bottom-percent: (@bottom/@context)*100;
+	@left-percent: (@left/@context)*100;
+	padding: ~`Number(@{top-percent}).toFixed(2) + "% " + Number(@{right-percent}).toFixed(2) + "% " + Number(@{bottom-percent}).toFixed(2) + "% " + Number(@{left-percent}).toFixed(2) + "%"`;
+}
+
+.margin(@context, @top: 0, @right: 0, @bottom: 0, @left: 0){
+	@top-percent: (@top/@context)*100;
+	@right-percent: (@right/@context)*100;
+	@bottom-percent: (@bottom/@context)*100;
+	@left-percent: (@left/@context)*100;
+	margin: ~`Number(@{top-percent}).toFixed(2) + "% " + Number(@{right-percent}).toFixed(2) + "% " + Number(@{bottom-percent}).toFixed(2) + "% " + Number(@{left-percent}).toFixed(2) + "%"`;
 }

@@ -5,7 +5,15 @@ h1 {
   border: 1px solid red;
   color: red;
 }
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+  background: #ddd;
+}
 #box {
-  width: 1.04%;
+  width: 41.67%;
+  padding: 5.00% 1.00% 1.00% 1.00%;
+  margin: 1.04% 10.00% 1.04% 1.04%;
   background: #ccc;
+  border: 1px solid red;
 }
