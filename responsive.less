@@ -8,7 +8,7 @@ Twitter: @paulmist
 
 .width(@context:100px, @target: 100px){
 	@percent: (@target/@context)*100;
-	width: ~`Number(@{percent}).toFixed(2) + "%"`;
+	width: ~`@{percent} + "%"`;
 }
 
 //Convert px based padding (shorthand) to %
@@ -18,26 +18,26 @@ Twitter: @paulmist
 	@right-percent: (@right/@context)*100;
 	@bottom-percent: (@bottom/@context)*100;
 	@left-percent: (@left/@context)*100;
-	padding: ~`Number(@{top-percent}).toFixed(2) + "% " + Number(@{right-percent}).toFixed(2) + "% " + Number(@{bottom-percent}).toFixed(2) + "% " + Number(@{left-percent}).toFixed(2) + "%"`;
+	padding: ~`@{top-percent} + "% " + @{right-percent} + "% " + @{bottom-percent} + "% " + @{left-percent} + "%"`;
 }
 
 //Convert px based padding to %
 
 .padding-top(@context, @top: 0){
 	@percent:(@top/@context)*100;
-	padding-top: ~`Number(@{percent}).toFixed(2) + "%"`;
+	padding-top: ~`@{percent} + "%"`;
 }
 .padding-right(@context, @right: 0){
 	@percent:(@right/@context)*100;
-	padding-right: ~`Number(@{percent}).toFixed(2) + "%"`;
+	padding-right: ~`@{percent} + "%"`;
 }
 .padding-bottom(@context, @bottom: 0){
 	@percent:(@bottom/@context)*100;
-	padding-bottom: ~`Number(@{percent}).toFixed(2) + "%"`;
+	padding-bottom: ~`@{percent} + "%"`;
 }
 .padding-left(@context, @left: 0){
 	@percent:(@left/@context)*100;
-	padding-left: ~`Number(@{percent}).toFixed(2) + "%"`;
+	padding-left: ~`@{percent} + "%"`;
 }
 
 //Convert px based margin (shorthand) to %
@@ -47,24 +47,24 @@ Twitter: @paulmist
 	@right-percent: (@right/@context)*100;
 	@bottom-percent: (@bottom/@context)*100;
 	@left-percent: (@left/@context)*100;
-	margin: ~`Number(@{top-percent}).toFixed(2) + "% " + Number(@{right-percent}).toFixed(2) + "% " + Number(@{bottom-percent}).toFixed(2) + "% " + Number(@{left-percent}).toFixed(2) + "%"`;
+	margin: ~`@{top-percent} + "% " + @{right-percent} + "% " + @{bottom-percent} + "% " + @{left-percent} + "%"`;
 }
 
 //Convert px based margin to %
 
 .margin-top(@context, @top: 0){
 	@percent:(@top/@context)*100;
-	margin-top: ~`Number(@{percent}).toFixed(2) + "%"`;
+	margin-top: ~`@{percent} + "%"`;
 }
 .margin-right(@context, @right: 0){
 	@percent:(@right/@context)*100;
-	margin-right: ~`Number(@{percent}).toFixed(2) + "%"`;
+	margin-right: ~`@{percent} + "%"`;
 }
 .margin-bottom(@context, @bottom: 0){
 	@percent:(@bottom/@context)*100;
-	margin-bottom: ~`Number(@{percent}).toFixed(2) + "%"`;
+	margin-bottom: ~`@{percent} + "%"`;
 }
 .margin-left(@context, @left: 0){
 	@percent:(@left/@context)*100;
-	margin-left: ~`Number(@{percent}).toFixed(2) + "%"`;
+	margin-left: ~`@{percent} + "%"`;
 }
